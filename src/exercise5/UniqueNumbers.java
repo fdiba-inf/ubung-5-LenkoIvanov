@@ -19,16 +19,7 @@ public class UniqueNumbers {
 
         int[] uniqueNumbers = new int[numbers.length];
 
-         for(int i = 0; i < uniqueNumbers.length - 1; i++){
-            for(int j = 0; j < uniqueNumbers.length - 1 - i; j++){
-                int next = j + 1;
-                if(numbers[j] > numbers[next]){
-                    int temp = numbers [j];
-                    numbers [j] = numbers[next];
-                    numbers[next] = temp;
-                }
-            }
-        }
+         
         
         int uniqueIndex = 0;
         for (int index = 0; index < numbers.length-1; index++) {
