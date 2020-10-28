@@ -23,7 +23,7 @@ public class UniqueNumbers {
         
         int uniqueIndex = 0;
         for (int index = 0; index < numbers.length-1; index++) {
-            for(int i = 0; i < numbers.length-index-1; i++) {
+            for(int i = 0; i < numbers.length-index-1;) {
                 if (numbers[index] == numbers[i]) {
                     index++;
                     break;
